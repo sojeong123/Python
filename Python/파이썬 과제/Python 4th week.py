@@ -60,6 +60,12 @@
 # for i in range(1,10):
 #     print("%d * %d = %d" %(dan, i, dan*i))
 
-for i in range(3):
-    for j in range(2):
-       print(i,j)
+# for i in range(3):
+#     for j in range(2):
+#        print(i,j)
+
+#구구단
+for i in range(2,10):
+    for j in range(1,10):
+        print("%d * %d = %d" %(i, j, i*j))
+
