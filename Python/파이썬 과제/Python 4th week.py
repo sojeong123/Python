@@ -147,13 +147,27 @@
 
 
 #30과 75의 최대공약수를 출력해보세요. [15]
-i = 1
-while i < 31:
-     if (30 % i == 0):
-         i = i + 1
-     if (75 % i == 0):
-         i = i + 1
-         continue
+# i = 1
+# while i < 31:
+#      if (30 % i == 0):
+#          i = i + 1
+#      if (75 % i == 0):
+#          i = i + 1
+#          continue
 
-     print(i)
-     i = i + 1
+#      print(i)
+#      i = i + 1
+
+#교수 For문 VER.
+# gcm = 0
+#
+# for i in range(1,31):
+#     if 30 % i == 0 and 75 % i == 0:
+#         gcm = i
+#print(gcm)
+
+#교수 IF문 VER.
+# i = 1
+# while i < 31:
+#    if 30 % i == 0 and 75 % i == 0:
+#       gcm = i
