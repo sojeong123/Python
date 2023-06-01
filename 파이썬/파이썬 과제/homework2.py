@@ -10,6 +10,7 @@ print(divisor(10))
 print(divisor(7))
 
 
+
 ## 2. 수도 출력 ##
 def find_capitalcity(capital, country):
     if country in capital:
@@ -24,9 +25,36 @@ print(find_capitalcity(capital, "덴마크"))
 print(find_capitalcity(capital, "일본"))
 
 
-## 3. 파일쓰기 ##
-#### coding here ####
 
+## 3. 파일쓰기 ##
+# 중간고사 점수 생성
+mid_test_scores = [random.randint(0, 100) for _ in range(50)]
+
+# 기말고사 점수 생성
+final_test_scores = [random.randint(0, 100) for _ in range(50)]
+
+# 과제 점수 생성
+homework_scores = [random.randint(0, 20) for _ in range(50)]
+
+# 출석 점수 생성
+attendance_scores = [random.randint(0, 10) for _ in range(50)]
+
+# 생성된 점수들을 파일에 기록 (옵션이므로 제출할 필요 없음)
+with open("mid_test.txt", "w") as file:
+    for score in mid_test_scores:
+        file.write(str(score) + "\n")
+
+with open("final_test.txt", "w") as file:
+    for score in final_test_scores:
+        file.write(str(score) + "\n")
+
+with open("homework.txt", "w") as file:
+    for score in homework_scores:
+        file.write(str(score) + "\n")
+
+with open("attendance.txt", "w") as file:
+    for score in attendance_scores:
+        file.write(str(score) + "\n")
 
 
 
